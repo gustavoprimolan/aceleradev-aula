@@ -1,9 +1,16 @@
 package br.com.aceleradev.domain;
 
-public class Professor extends Usuario {
+import java.time.LocalDate;
 
-    public Professor(String nome, String login, String cpf) {
+public class Professor extends Usuario {
+    private int anoInicioCarreira; 
+
+    public Professor(String nome, String login, String cpf, int anoInicio) {
         super(nome, login, cpf);
+
+        this.anoInicioCarreira = anoInicio;        
     }
+
+
 
 }

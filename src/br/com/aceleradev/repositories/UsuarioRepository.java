@@ -11,6 +11,7 @@ public class UsuarioRepository {
 
     private List<Usuario> usuarios = new ArrayList<>();
 
+
     public void insere(Usuario usuario) {
         usuarios.add(usuario);
     }
