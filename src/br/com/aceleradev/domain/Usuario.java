@@ -1,8 +1,9 @@
 package br.com.aceleradev.domain;
 
+import br.com.aceleradev.annotations.Coluna;
 import br.com.aceleradev.exceptions.LoginInvalidoException;
 
-import static br.com.aceleradev.utils.MensagemException.LOGIN_MENOR_DE_TRES_CARACTERES;
+import static br.com.aceleradev.utils.MensagensParaExcecoes.LOGIN_MENOR_DE_TRES_CARACTERES;
 
 public class Usuario {
 
@@ -16,16 +17,23 @@ public class Usuario {
         this.cpf = cpf;
     }
 
+    @Coluna(posicao = 1, titulo = "NOME")
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    @Coluna(posicao = 2, titulo = "CPF")
+    public String getCpf() {
+        return cpf;
     }
 
+    @Coluna(posicao = 3, titulo = "LOGIN")
     public String getLogin() {
         return login;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public void setLogin(String login) {
@@ -39,10 +47,6 @@ public class Usuario {
 
     private boolean loginInvalido(String login) {
         return login.length() <= 3;
-    }
-
-    public String getCpf() {
-        return cpf;
     }
 
     public void setCpf(String cpf) {
