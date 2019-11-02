@@ -1,0 +1,11 @@
+
+Qsquid:S1854"5Remove this useless assignment to local variable "b".(Ð•ß‰ûÿÿÿÿ
+Qsquid:S1854	"5Remove this useless assignment to local variable "c".(”þÙóÿÿÿÿÿ
+Qsquid:S1854"5Remove this useless assignment to local variable "a".(×¹æƒøÿÿÿÿ
+<squid:S2129" Remove this "String" constructor(×¹æƒøÿÿÿÿ
+7squid:S2129" Remove this "String" constructor(ç¢Üô
+<squid:S2129	" Remove this "String" constructor(”þÙóÿÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+ksquid:S1215"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“
+Bsquid:S1481	"&Remove this unused "c" local variable.(”þÙóÿÿÿÿÿ

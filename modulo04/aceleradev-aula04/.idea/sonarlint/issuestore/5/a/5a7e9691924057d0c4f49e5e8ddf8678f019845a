@@ -1,0 +1,7 @@
+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ό’¦μωÿÿÿÿ
+Fsquid:EmptyStatementUsageCheck"Remove this empty statement.(”Ι
+Asquid:S1481"*Remove this unused "aluno" local variable.(›‚•
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Β“§ϋύÿÿÿÿ
+gsquid:CommentedOutCodeLine	"<This block of commented-out lines of code should be removed.(ρ¥ωψÿÿÿÿ
+Psquid:S1854"9Remove this useless assignment to local variable "aluno".(›‚•

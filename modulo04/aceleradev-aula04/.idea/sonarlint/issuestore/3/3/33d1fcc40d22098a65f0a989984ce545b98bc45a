@@ -1,0 +1,7 @@
+
+Qsquid:S1481".Remove this unused "professor" local variable.(öÛûÿÿÿÿ8ÛÂÒÃà-
+rsquid:S1192"ODefine a constant instead of duplicating this literal "123.456.678-21" 3 times.(Â¤¿éıÿÿÿÿ8ü¾ÃÃà-
+Nsquid:S1481"0Remove this unused "coordenador" local variable.(¬éÆñ8×©ÔÃà-
+isquid:S1192"FDefine a constant instead of duplicating this literal "login" 3 times.(Â¤¿éıÿÿÿÿ8ü¾ÃÃà-
+]squid:S1854"?Remove this useless assignment to local variable "coordenador".(¬éÆñ8×©ÔÃà-
+`squid:S1854"=Remove this useless assignment to local variable "professor".(öÛûÿÿÿÿ8ÛÂÒÃà-
