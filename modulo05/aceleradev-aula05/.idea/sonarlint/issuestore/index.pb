@@ -25,3 +25,7 @@ g
 7src/main/java/br/com/aceleradev/domain/Coordenador.java,3/5/358c80f7b3717625ec8836532df176e9f8ad2687
 a
 1src/main/java/br/com/aceleradev/dao/AlunoDAO.java,c/6/c60201c7e35855ab1824830aa9767baccc4b9da3
+e
+5src/main/java/br/com/aceleradev/dao/ProfessorDAO.java,a/c/ac046247b2d0e28d42d1c3694b7880bbff4684aa
+f
+6src/main/java/br/com/aceleradev/dao/DisciplinaDAO.java,0/b/0bb1aa446e836d5431d9baabc3881b87a592c21d

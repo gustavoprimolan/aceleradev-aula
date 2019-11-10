@@ -1,3 +1,13 @@
 
-Ksquid:S1481"-Remove this unused "alunoDAO" local variable.(£’‘ô8∫ÛﬂÉÂ-
-Zsquid:S1854"<Remove this useless assignment to local variable "alunoDAO".(£’‘ô8∫ÛﬂÉÂ-
+[
+squid:S1069"9Replace this use of System.out or System.err by a logger.(˚«©æ˘ˇˇˇˇ8ﬁ¡ÔáÂ-
+[
+squid:S106D"9Replace this use of System.out or System.err by a logger.(––≠≤˛ˇˇˇˇ8Í±˘áÂ-
+[
+squid:S106!"9Replace this use of System.out or System.err by a logger.(òä¬ôˇˇˇˇˇ8¯öÑÂ-
+[
+squid:S106#"9Replace this use of System.out or System.err by a logger.(òä¬ôˇˇˇˇˇ8¨Ø–ÑÂ-
+V
+squid:S106C"9Replace this use of System.out or System.err by a logger.(∫÷µã8œ¢ˆáÂ-
+V
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Ê‘˝˘8¡∫äàÂ-

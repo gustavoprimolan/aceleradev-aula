@@ -42,6 +42,14 @@ public class Usuario {
         this.cpf = cpf;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Coluna(posicao = 1, titulo = "NOME")
     public String getNome() {
         return nome;

@@ -1,6 +1,6 @@
 
-hsquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(¾ŒÐ8«í»ãâ-
-nsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(™³é¶üÿÿÿÿ8«í»ãâ-
 hsquid:UselessImportCheck"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8«í»ãâ-
+nsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(™³é¶üÿÿÿÿ8«í»ãâ-
 V
 squid:S1068"9Replace this use of System.out or System.err by a logger.(ðê»±8«í»ãâ-
+hsquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(¾ŒÐ8«í»ãâ-
