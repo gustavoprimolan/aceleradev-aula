@@ -1,6 +1,11 @@
 package br.com.aceleradev.biblioteca.models;
 
-import javax.annotation.Generated;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,6 +15,11 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = Categoria.TABLE_NAME)
 public class Categoria {
@@ -23,30 +33,7 @@ public class Categoria {
     @NotNull
     private String nome;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "categorias")
     private List<Livro> livros;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public List<Livro> getLivros() {
-        return livros;
-    }
-
-    public void setLivros(List<Livro> livros) {
-        this.livros = livros;
-    }
 }

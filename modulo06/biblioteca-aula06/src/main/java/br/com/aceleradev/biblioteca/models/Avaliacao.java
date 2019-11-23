@@ -1,7 +1,6 @@
 package br.com.aceleradev.biblioteca.models;
 
 
-import ch.qos.logback.classic.db.names.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
