@@ -7,15 +7,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import java.util.List;
+import javax.validation.constraints.NotEmpty;
 
 @Getter
 @Setter
@@ -23,20 +21,26 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = Leitor.TABLE_NAME)
-public class Leitor {
+@Table(name = Usuario.TABLE_NAME)
+public class Usuario {
 
-    public static final String TABLE_NAME = "leitor";
+    public static final String TABLE_NAME = "usuario";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
-    @NotBlank
+    @NotEmpty
     private String nome;
 
-    @OneToMany(mappedBy = "id.leitor")
-    private List<Avaliacao> avaliacoes;
+    @NotEmpty
+    @Column(unique = true)
+    private String username;
+
+    @NotEmpty
+    private String password;
+
+    @NotEmpty
+    private boolean admin;
 
 }

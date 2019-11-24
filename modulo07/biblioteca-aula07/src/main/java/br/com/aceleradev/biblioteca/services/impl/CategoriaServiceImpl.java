@@ -4,6 +4,7 @@ import br.com.aceleradev.biblioteca.exceptions.ResourceNotFoundException;
 import br.com.aceleradev.biblioteca.models.Categoria;
 import br.com.aceleradev.biblioteca.repositories.CategoriaRepository;
 import br.com.aceleradev.biblioteca.services.CategoriaService;
+import br.com.aceleradev.biblioteca.services.LivroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

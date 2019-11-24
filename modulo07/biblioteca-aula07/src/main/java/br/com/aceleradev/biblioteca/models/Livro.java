@@ -39,7 +39,7 @@ public class Livro {
     public static final String TABLE_NAME = "livro";
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull(message = "Título não pode ser nulo")
