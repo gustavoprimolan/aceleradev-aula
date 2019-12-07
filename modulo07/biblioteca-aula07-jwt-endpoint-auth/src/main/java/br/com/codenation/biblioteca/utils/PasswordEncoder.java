@@ -8,6 +8,5 @@ public class PasswordEncoder {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         System.out.println(passwordEncoder.encode("aceleradev"));
     }
-
-
+    
 }
