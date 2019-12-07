@@ -10,3 +10,7 @@
 1 - Criar uma branch no gitlab com o projeto no modulo 09.
 2 - Fazer o deploy no Heroku.
 3 - Criar uma pipeline para automatizar o deploy no heroku quando um commit é feito na branch 'master' do Heroku.
+
+
+<a href="https://aceleradev.herokuapp.com">Serviço no Heroku</a>
+<a href="https://aceleradev.herokuapp.com/swagger-ui.html">Swagger do Serviço</a>
