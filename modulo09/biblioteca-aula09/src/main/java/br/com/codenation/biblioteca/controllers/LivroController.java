@@ -2,7 +2,11 @@ package br.com.codenation.biblioteca.controllers;
 
 import br.com.codenation.biblioteca.models.Livro;
 import br.com.codenation.biblioteca.services.LivroService;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +19,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import javax.validation.Valid;
 
@@ -30,8 +35,14 @@ public class LivroController {
     }
 
     @GetMapping
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "page", dataType = "integer", paramType = "query", value = "Results page you want to retrieve (0..N)", defaultValue = "0"),
+            @ApiImplicitParam(name = "size", dataType = "integer", paramType = "query", value = "Number of records per page.", defaultValue = "5"),
+            @ApiImplicitParam(name = "sort", dataType = "string", paramType = "query", defaultValue = "id,desc", value = "Sorting by column")
+    })
     @ApiOperation(value = "Retorna livros paginados", response = Livro[].class)
-    public ResponseEntity<Page<Livro>> findAll(@PageableDefault(sort = "id", direction = Sort.Direction.DESC, page = 0, size = 24) Pageable pageable){
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "Livros paginados"), @ApiResponse(code = 500, message = "Internal server error")})
+    public ResponseEntity<Page<Livro>> findAll(@ApiIgnore @PageableDefault(sort = "id", direction = Sort.Direction.DESC, page = 0, size = 24) Pageable pageable){
         return ResponseEntity.ok(this.livroService.findAll(pageable));
     }
 
